@@ -5,7 +5,9 @@ load_dotenv()
 
 
 llm=ChatGroq(
-    model="openai/gpt-oss-20b"
+    model="openai/gpt-oss-20b",
+    temperature=1,
+    max_tokens=200
 )
 
 print("My first chatbot")
